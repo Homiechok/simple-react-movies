@@ -13,6 +13,5 @@ export const searchMovies = async (query) => {
     `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${encodeURIComponent(query)}`,
   );
   const data = await res.json();
-  // console.log(data);
   return data.results;
 };
